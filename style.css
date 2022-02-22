@@ -1,0 +1,26 @@
+body {
+     display: flex;
+     gap: 50px;
+    flex-direction: column;}
+    
+.container 
+{
+display: flex;   
+max-width: 500px;
+min-height: 1px;
+flex-wrap: wrap;
+}
+
+.container > div 
+{
+    margin: 0.1rem;
+    height: 2rem;
+    width: 2rem;
+    background-color: rgb(0, 0, 0);
+    border: 1px black solid;
+}
+
+.controls 
+{
+
+}
