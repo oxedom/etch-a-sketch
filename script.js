@@ -1,9 +1,13 @@
 let container = document.getElementById('container')
 let currentColor = 'blue'
+
+let input = document.getElementById('input')
 let rgbBtn = document.getElementById('rgb')
 rgbBtn.addEventListener('click', e => 
 {
-if(currentColor == 'blue') {
+if(currentColor == 'blue') 
+{
+
     currentColor = "red"}    
 else { currentColor ='blue'}
 
@@ -26,6 +30,26 @@ let rowAdder = (numPara) =>
        
     }
 }
+
+
+let reset = document.getElementById('reset')
+reset.addEventListener('click', e => 
+{
+
+for (let index = 0; index < container.children.length; index++) {
+    container.children[index].style.backgroundColor = 'white'
+    
+}    
+})
+
+
+input.addEventListener('keyup', 
+e => 
+{
+
+
+
+})
 
 
 rowAdder(13)
