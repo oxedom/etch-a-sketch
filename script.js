@@ -1,7 +1,6 @@
 let container = document.getElementById('container')
 let currentColor = 'black'
 
-// let input = document.getElementById('input')
 let rgbBtn = document.getElementById('rgb')
 let toogle = false
 rgbBtn.addEventListener('click', e => 
