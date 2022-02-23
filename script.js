@@ -1,15 +1,14 @@
 let container = document.getElementById('container')
-let currentColor = 'green'
+let currentColor = 'black'
 
-let input = document.getElementById('input')
+// let input = document.getElementById('input')
 let rgbBtn = document.getElementById('rgb')
+let toogle = false
 rgbBtn.addEventListener('click', e => 
 {
-if(currentColor == 'blue') 
-{
-
-    currentColor = "red"}    
-else { currentColor ='blue'}
+toogle = !toogle
+if(currentColor == 'black') { toogle = true}    
+else { currentColor = 'black'}
 
 
 
@@ -20,10 +19,12 @@ let rowAdder = (numPara) =>
     for (let index = 0; index < numPara; index++) {
 
 
-        for (let index = 0; index < 13; index++) {
+        for (let index = 0; index < numPara; index++) {
             let div = document.createElement('div')
             div.addEventListener('mouseover', e =>
-            { e.target.style.backgroundColor = currentColor})
+            { 
+                if(toogle) { currentColor = Math.floor(Math.random()*16777215).toString(16)   }
+                e.target.style.backgroundColor = currentColor})
         container.appendChild(div)
             
         }
@@ -43,13 +44,14 @@ for (let index = 0; index < container.children.length; index++) {
 })
 
 
-input.addEventListener('keyup', 
-e => 
-{
+// input.addEventListener('change', 
+// e => 
+// {
+//     rowAdder(e.value)
 
 
 
-})
+// })
 
 
 rowAdder(13)
