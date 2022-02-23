@@ -10,8 +10,6 @@ toogle = !toogle
 if(currentColor == 'black') { toogle = true}    
 else { currentColor = 'black'}
 
-
-
 })
 
 let rowAdder = (numPara) => 
@@ -44,14 +42,6 @@ for (let index = 0; index < container.children.length; index++) {
 })
 
 
-// input.addEventListener('change', 
-// e => 
-// {
-//     rowAdder(e.value)
-
-
-
-// })
 
 
 rowAdder(13)
