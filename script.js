@@ -1,5 +1,5 @@
 let container = document.getElementById('container')
-let currentColor = 'blue'
+let currentColor = 'green'
 
 let input = document.getElementById('input')
 let rgbBtn = document.getElementById('rgb')
